@@ -1,0 +1,161 @@
+body {
+
+    overflow-x: hidden;
+    font-family: 'robot', cursive;
+}
+/* un padding pour écarter */
+.btn {
+    padding: 10px 20px;
+
+}
+/* space around pour les écarter un peu plus avec le logo */
+#navigation{
+display: flex;
+justify-content: space-around;
+
+
+}
+.decorationNone {
+    text-decoration: none;
+    color: #003E52;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+/* un hover */
+a :hover{
+    color: #6cadc2;
+}
+
+#plat {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.epice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#epice2 {
+    height: 70vh;
+}
+
+.info {
+    width: 450px;
+    text-align: right;
+    margin-right: 300px;
+    color: #003E52;
+
+}
+
+table{
+  margin: 0 30vw;
+  color: #003E52;
+
+}
+#slider {
+    width: 100vw;
+
+}
+
+
+#sushi {
+    width: 100vw;
+}
+.bordercolor{
+    border-bottom: 5px #003E52;
+}
+footer {
+    background-color: #003E52;
+    width: 100vw;
+    height: 200px;
+    color: #ffff;
+}
+
+iframe {
+    width: 100vw;
+    height: 430px;
+    filter: grayscale(100%);
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#hamburger {
+    visibility:hidden
+}
+#navigation {
+  padding: 0;
+}
+
+/* ******** media queries téléphones + tablettes ************** */
+
+@media screen and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .epice{
+        margin-left: 30px;
+    }
+    #epice2{
+        min-height: 700px; 
+    }
+    .info{
+        width: 450px;
+        text-align: right;
+        margin-right: 300px;
+    }
+    #plat{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    
+    }
+
+/* ************** media queries téléphones ************** */
+
+@media screen and (max-width: 768px) {
+    #hamburger{
+        visibility:visible;
+    }
+    #navigation{
+        display: none;
+    }
+
+    .epice{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin-left: 10px;
+    }
+    .info{
+        margin-left: 190px; ;
+        width: 450px;
+        text-align: right;
+    }
+    table{
+        margin:  0 5vw;
+        width: 80vw;
+        margin-bottom: 5px;
+    }
+}
